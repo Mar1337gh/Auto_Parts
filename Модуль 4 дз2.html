@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <style>
+         html, body {
+            height: 100%;
+            width: 100%;
+        }  
+        html{
+            position: relative;
+            background-color: lightblue;
+        } 
+            .header-container{
+            height: 200px;    
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: 18pt;
+            background-image: url(fwxawy4vdcoc0o884cc4ksgo4ccggc.jpg);
+            overflow: hidden; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            justify-content: space-evenly;
+            flex-grow: 1; 
+            width: 100%; 
+            /* padding: auto; */
+            /* justify-content: flex-end; */
+        }
+        a {
+            /* line-height: 2; */
+            margin-right: 5px;
+            background:dodgerblue;
+            /* outline: none; */
+            text-decoration: none;
+            transition: 0.4s;
+            width: 70%;
+            padding: 5px 15px;
+        } 
+        .nav { 
+            /* margin-left:50px;  */
+            padding-left: 180px; 
+            margin-bottom: 130px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 1;
+            text-align: center;
+            display: inline-block;
+            flex-grow: 1; 
+        }    
+         h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 30px;
+            flex-grow: 1; 
+
+        } 
+        
+        a:hover{
+            background:mediumturquoise;
+            transition: 0.4s;
+        }
+        aside {
+            position: fixed;
+            flex-direction: column;
+            width: 200px;
+            margin-top: 10%;
+            flex-grow: 1; 
+        }
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16pt;
+            margin-top: 50px;
+            flex-grow: 1; 
+
+        }
+        .text-1{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14pt;
+            margin-left: 100px;
+            margin-right: 100px; 
+            height: 300%;
+            flex-grow: 1; 
+            padding: 70px;
+        }
+        /* a{
+            display: flex;
+            justify-content: flex-end;
+            background:dodgerblue;
+            width: 40%;
+            text-align: center;
+        } */
+        /* aside {
+            position: fixed;
+            flex-direction: column;
+        } */
+        .description {
+            display: grid;
+            /* grid-template-rows: auto; */
+            /* width: 100px;
+            height: 100px;   */
+            /* grid-auto-rows: 100px; */
+            /* grid-template: repeat(2, 1fr) / repeat(2, 1fr); */
+            margin-left: 20%;
+            margin-top: 5%; 
+            grid-auto-flow: column;
+            gap: 20px;
+            grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+            width: clamp(200px, 80%, 2560px); 
+            text-align: center;
+            padding-bottom: 170px;
+
+        }
+       /*  main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill);
+        } */
+        .img1 {
+            display: grid;
+            width: 100px;
+            height: 100px; 
+            justify-content: center;
+            align-content: center;
+             grid-template-rows: auto; 
+            /* margin-left: 25%; */
+            margin-top: 20%; 
+            /* grid-auto-flow: column;
+            gap: 30px;
+            grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+            width: clamp(200px, 80%, 1500px);  */
+            width: clamp(200px, 80%, 2560px);
+        }
+        .footer-container{
+            position: fixed;
+            bottom: 0;
+            height: 100px;
+            left: 40%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            /* position : absolute; */
+            /* height : auto;
+            bottom : 0; */
+            flex-grow: 1; 
+            /* align-content: flex-end; */
+             /* flex: 0 0 auto;  */
+        }
+        .button1 {
+            border: 1px;
+            width: 50vmin;
+            height: 7vmin;
+            border-radius: 50px;
+            font-size: 15pt;
+            background-color:darkgreen;
+            color:aliceblue;
+            flex-grow: 1; 
+        }
+        .button1:hover {
+            background-color: darkorange;
+            transition: 0.4s;
+        }
+        /* footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        button {
+            border: 1px;
+            width: 70vmin;
+            height: 70vmin;
+            border-radius: 50%;
+            background-color: royalblue;
+            color:darkseagreen;
+        } */
+        </style>
+</head>
+<body>
+    <header class="header-container">
+        <h1>Запчасти для машин PartsforCars</h1>
+        <nav class="nav">
+            <a href="#">О нас</a>
+            <a href="#">Наши услуги</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <aside>
+        <h2>3 по цене 2х!</h2>
+        <p>При заказе 3х редукторов вы платите как за 2!</p>
+        </p>
+        <h2>Скидка на покупку!</h2>
+        <p>При заказе в праздничные дни вы получаете скиду до 50%!</p>
+    </aside>
+    <main>
+        <div>
+            <h2>Компания «PartsforCars»</h2>
+            <p class="text-1">
+                Компания «PartsforCars» основана в 2007 г. За 17-летний период работы компании, подготовки персонала, нам удалось выйти на новый уровень развития бизнеса. Это заметили наши клиенты, оценившие:</p>
+            <div class="description">
+            <div class="img1">
+                <i class="fa-solid fa-headset fa-2xl" style="color: #1239fd;"></i><p>Индивидуальный подход</p>
+            </div>
+            <div class="img1">
+                <i class="fa-solid fa-briefcase fa-2xl" style="color: #1239fd;"></i><p>Трудолюбие специалистов"</p>
+            </div>
+            <div class="img1">
+                <i class="fa-solid fa-medal fa-2xl" style="color: #1239fd;"></i>    
+            <p>Оперативность и ответственность</p>
+            </div>
+            <div class="img1">
+                <i class="fa-solid fa-piggy-bank fa-2xl" style="color: #1239fd;"></i>
+            <p>Доступные цены</p>
+            </div>
+            <div class="img1">
+                <i class="fa-solid fa-truck-fast fa-2xl" style="color: #1239fd;"></i>
+            <p>Пунктуальность и надежность</p>
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <button class="button1" name="button1">Отправить заявку</button>
+        <div><i class="fa-sharp fa-solid fa-phone-volume"></i>+7(555)70-70-70</div>
+        <div><i class="fa-solid fa-at"></i>partsforcars@mail.com</div>
+    </footer>
+    <script src="https://kit.fontawesome.com/b1980951a6.js" crossorigin="anonymous"></script>
+</body>
+</html>
